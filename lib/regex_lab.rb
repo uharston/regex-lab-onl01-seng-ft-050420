@@ -23,8 +23,8 @@ end
 #1. Iterate through phone array
 #2.Check if element has 10 numbers
 def valid_phone_number?(phone)
-  # phone.each do |number|
-  #   number.
+  #  phone.each do |number|
+  #    number.gsub(/[()-], ''/)
   if phone.match(/([0-9] ?){10}/) || phone.match(/(\([0-9]{3}\)([0-9]{3}-[0-9]{4})\b)/) || phone.match(/\b([0-9]{7})\b/)
    true
  else
